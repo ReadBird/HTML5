@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--파일의 인코딩을 알려주는 태그, 해당 태그가 없으면 한글, 특수문자 등이 깨져서 표기될 수 있음-->
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <table border="1"> <!--행하고 열로 구성된 작은 표 형태를 만들수 있는 태그, 행(row)은 tr(table row) 열은 td(Table Data)-->
+            <tr><td colspan="3">실적</td></tr> <!--colspan="n"은 좌우로 n칸 병합-->
+            <tr><td rowspan="3">2022</td><td>5</td><td>6</td></tr> <!--rowspan="n"은 상하로 n칸 병합-->
+            <tr>             <td>8</td><td>9</td></tr>
+            <tr>             <td>1</td><td>2</td></tr>
+        </table>
+    </body>
+</html>
