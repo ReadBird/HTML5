@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+        <style> 
+        /*
+            * { 
+                color : rgb(255, 58, 58); 
+            }
+            */
+            #a1 { 
+                color: rgb(0, 216, 216);
+            }
+            p {
+                color: rgb(255, 187, 0);
+            }
+            .pink {
+                color: rgb(255, 91, 118);
+            }
+            .bold {
+                font-weight: bold;
+            }
+            h2 {
+                color: orange;
+            }
+            div {
+                color: green;
+            }
+        </style> <!--*은 바디 안에 모든것, 전체를 선택하는 방법, 서로의 style의 작업 내용이 겹치는 경우, 같은 형태의 style이라면 아래 줄에서 입력한 내용이 우선되고,다른 형식의 style 형태라면 좀 더 상세하게 조건을 제시한 쪽이 우선순위를 가진다.-->
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <h1>hello</h1>
+        <p class="bold">내용~~</p>
+        <h1>bbbbb</h1>
+        <P id="a1">aaaaaa</P> <!--태그에 ID 속성을 통해 style에서 특정 ID만을 선택할수도 있다.-->
+        <P class="pink">그냥 핑크색 글씨</P> <!--ID 태그는 "유일하게" 하나만이 존재할수 있다, 여러 곳에 같은 이름의 ID를 사용해서 여러개를 동시에 선택하는것은 불가능하다. 이에 경우 class 속성을 사용하면 가능하다.-->
+        <p class="pink bold">볼드체 핑크색 글씨</p> <!--여러개의 Class를 사용하고 싶다면, "n" 안에 여러 개의 class 이름을 지정해줘도 된다. -->
+        <p>dddddd</p>
+        <div>
+            div 태그 안에 있는 내용~
+            <h2>div 태그 안에있는 h2 태그 안에 있는 내용~</h2>
+            <h2 style="color: red;">div 태그 안에있는 h2 태그 안에, Style 태그로 속성을 붉은색으로 설정한 내용~</h2>
+        </div>
+    </body>
+</html>

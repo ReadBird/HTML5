@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+        <style>
+            .a1 {
+                letter-spacing: 0.2em; /*글자의 좌우 간격*/
+            }
+            .a2 {
+                letter-spacing: 0.5em;
+            }
+            .a3 {
+                text-align: left; /*글자를 특정 방향으로 정렬, 예를 들어 center의 경우 가운데 정렬*/
+                text-indent: 30px; /*글자의 왼쪽에 정한 단위만큼 공백을 주고 시작*/
+            }
+            .a4 {
+                text-align: left; /*글자를 특정 방향으로 정렬, 예를 들어 center의 경우 가운데 정렬*/
+                text-indent: 30px; /*글자의 왼쪽에 정한 단위만큼 공백을 주고 시작*/
+                line-height: 300%; /*글의 상하 줄간격을 정해진 크기만큼 늘림*/
+            }
+            .a5 {
+                border:1px solid black;
+                width: 300px; /*브라우저의 폭과 상관 없이, 좌우 길이가 정해진 크기를 넘어가면, 즉시 줄을 내림*/
+                white-space: nowrap;
+                overflow: hidden; /*출력할 영역의 크기보다 내용이 많으면, 넘어간 부분을 어떻게 처리할 것에 관한 내용, hidden은 넘어간 부분을 보이지 않게 처리함*/
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <h2 class="a1">html5</h2>
+        <h2 class="a2">html5</h2>
+        <p class="a3">abcde abcd abc ab a abcde abcd abc ab a abcde abcd abc ab a abcde abcd abc ab a</p>
+        <p class="a4">abcde abcd abc ab a abcde abcd abc ab a abcde abcd abc ab a abcde abcd abc ab a</p>
+        <p class="a5">abcde abcd abc ab a abcde abcd abc ab a abcde abcd abc ab a abcde abcd abc ab a</p>
+    </body>
+</html>

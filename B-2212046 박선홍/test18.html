@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+        <style>
+            div {
+                width: 200px;
+                height: 300px;
+            }
+            .d1 {
+                background: linear-gradient(32deg, rgb(0, 255, 106), rgb(0, 225, 255));
+            }
+            .d2 {
+                background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0) 20%, rgb(0, 0, 255));
+            }
+            .d3 {
+                background: radial-gradient(circle, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0),rgb(0, 255, 255),rgb(0, 0, 255),rgb(255, 0, 255));
+            }
+            .d4 {
+                background: repeating-linear-gradient(yellow,yellow 20px,red 20px, red 40px);
+            }
+            .d5 {
+                background: repeating-radial-gradient(circle,white,white 10%,#666 10%,#666 20%);
+            }
+        </style>
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <h1>hello</h1>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+        <div class="d5"></div>
+    </body>
+</html>

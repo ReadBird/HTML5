@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+        <style>
+            body {
+                background-image: url("image/bg1.png");
+                background-repeat: no-repeat; /*작은 이미지를 특정한 규칙으로 반복해서 배경을 채우는 방식, repeat-x의 경우 x축으로 반복*/
+            }
+            .a {
+                width: 500px;
+                height: 500px;
+                border: 1px solid black;
+                background-image: url("image/bg4.jpg"); /*이미 지정한 영역이 있다면, 해당 영역 내에서만 적용됨*/
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <h1>hello</h1>
+        <div class="a">
+        <p>
+            abcde abcde abcdeabcde abcdeabcdeabcde abcdeabcde abcde abcdeabcdeabcdeabcdeabcde abcde abcdeabcdeabcde abcde abcdeabcdeabcde
+        </p>
+        </div>
+    </body>
+</html>

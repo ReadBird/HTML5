@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <form>
+            <input type="hidden" name="aaa" value="10"><br> <!--type="hidden", 서버로 보내는 값을 우리에게 보이지 않게 하는 type-->
+            <input type="text" maxlength="5" minlength="3"><br>
+            <input type="password"><br> <!--type="password"는 적은 내용을 눈으로 볼수 없에 *로 표시하는 type-->
+            <input type="search"><br> <!--type="search"는 type="text"와 거의 유사하지만, 오른쪽에 마우스로 눌러 쓰던 내용을 지울수 있는 버튼이 있다.-->
+            <input type="url"><br> <!--type="url"은 주소를 입력한건지 감지하는 type-->
+            <input type="email"><br> <!--type="email"은 적은 내용에 @가 있는지를 감지하는 type -->
+            <input type="tel"><br>
+            <input type="number"><br> <!--type="number" 숫자만 입력받는 type, 오른쪽에 마우스로 눌러, 숫자를 하나씩 올리고 내릴수 있는 버튼이 있다.-->
+            <input type="range" min="1" max="10" value="3"><br> <!--type="range"는 슬라이드 막대를 통해 좌우로 움직여, 사용자의 입력을 받는 태그, min과 max 속성을 통해 최소, 최대값을 지정하고, value 속성을 통해 초기값을 정할 수 있다.-->
+            <input type="checkbox" checked>checkbox botton<br> <!--type="checkbox"는 누르고, 끌수 있는 체크박스를 만드는 type, checked 속성을 통해, 초기값을 체크 된 상태로 나오게 할 수 있다.-->
+            <input type="radio" checked>radio button<br> <!--type="radio" 중복되지 않는, 라디오 버튼을 만드는 type, checked 속성을 통해, 초기값을 체크된 상태로 나오게 할 수 있다.-->
+            <input type="color"><br> <!--type="color"는 색상을 선택할 수 있는, RGB색상 표를 표시하는 type-->
+            <input type="date"><br> <!--type="date"는 날자를 년/월/일로 선택할수 있는 달력을 표시하는 type-->
+            <input type="month"><br> <!--type="month"는 날자를 년/월로 선택할수 있는 달력을 표시하는 type-->
+            <input type="week"><br> <!--type="week"는 한 주를, 년의 n번째 주로 표시할수 있는 달력을 표시하는 type-->
+            <input type="time"><br> <!--type="time"은 시간을 표시할수 있는 type-->
+            <input type="datetime-local"><br> <!--type="datetime-local"은 년/월/일/시간을 표시할수 있는 달력과 시계를 표시하는 type-->
+            <input type="button" value="계산"><br> <!--type="botton"은 서버로 전송하는 것이 아닌, 그 전에 무언가 실행하거나 처리를 하고싶을때 사용할 버튼을 만드는 type-->
+            <input type="file"><br> <!--type="file"은 내 컴퓨터 내에 파일 탐색기를 실행하는 type-->
+            <input type="submit">
+        </form>
+    </body>
+</html>

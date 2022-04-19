@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <form>
+            <label>이름(*)<input type="text" size="5" autofocus required></label><br> <!--autofocus 속성은, 자동으로 칸을 선택된 채로 실행되게 해주는 속성, reqiored 속성은, 해당 칸을 입력해지만 제출이 가능하게 해주는 속성-->
+            <input type="text" placeholder="5자 미만" minlength="4"><br> <!--placeholder 속성은, 반투명한 글씨로, 칸에 배경에 설명을 뛰워주는 속성-->
+            <input type="text" value="~~대학" readonly><br> <!--readonly 속성은, 해당 칸을 읽기만 가능하고, 수정 불가능하게 만들어주는 속성-->
+            <select> <!--type="radio"과 거의 유사한 기능을 하지만, 칸을 조금 더 효율적으로 쓸수 있는 선택지를 만들어주는 태그-->
+                <optgroup label="공학"> <!--<optgroup> 태그는, <select> 태그 안에 선택지 중에, 선택할수 없는 설명 칸을 추가해주는 태그-->
+                    <option>a 선택지</option>
+                    <option>b 선택지</option>
+                    <option selected>c 선택지</option> <!--selected 속성은, 해당 칸을 초기값으로 설정해주는 속성-->
+                </optgroup>                
+                <optgroup label="인문사회">
+                    <option>a 선택지</option>
+                    <option>b 선택지</option>
+                    <option selected>c 선택지</option> <!--selected 속성은, 해당 칸을 선택지의 초기값으로 설정해주는 속성-->
+                </optgroup>
+            </select>
+            <br>
+            <input type="text" list="a list" placeholder="자신의 의견을 적어도 됩니다.">
+            <datalist id="a list">
+                <option>a 선택지</option>
+                <option>b 선택지</option>
+                <option>c 선택지</option>
+            </datalist>
+            <br>
+            <textarea cols="60" rows="10">
+                초기값이에요~
+            </textarea>
+            <progress max="100" value="80"></progress>
+            <meter min="0" max="100" value="50" low="20" high="70"></meter>
+            <input type="submit">
+        </form>
+    </body>
+</html>

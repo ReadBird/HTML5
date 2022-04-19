@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <hi>form</hi>
+        <form>
+            <h3>로그인</h3>
+            <fieldset>
+                age:<input type="text" size="10" maxlength="10" value="초기값, 수정가능"><br>
+                <label for="ID input">id:</label><input type="text" id="ID input"><br> <!--앞에 <lavel> 태그 안에 for="이름"을 사용해 뒤에 <input> 태그랑 연결해주기 위해 id="이름"를 사용합.-->
+                <label>id:<input type="text"></label><br> <!--하지만 굳이, 위에처럼 for과 id을 굳이 사용하지 않아도, <lavel> 태그를 닫는 부분이 <input> 태그 뒤에 있다면, 알아서 연결이 됨-->
+            </fieldset>
+            <br>
+            <fieldset>
+                <h3>취미를 고르시오</h3>
+                <ul>
+                    <li><input type="checkbox" value="a">A button</li>
+                    <li><input type="checkbox" value="b">B button</li>
+                    <li><input type="checkbox" value="c">C button</li>
+                </ul> <!--위에 <lavel> 태그 말고 다른 태그를 활용해도, 시작과 끝으로 <input>을 감싸주면, 자동으로 연결이 됨-->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>직업을 고르시오</legend>
+                <ul>
+                    <li><input type="radio" name="job">a job</li> <!--type="radio"의 경우, 중복해서 선택할수 없는 항목, 예를 들자면, 성별을 물어보는 질문, 등에 사용되는 태그로, 하나의 버튼을 누르면 다른 버튼이 꺼지는 방식으로 작동함-->
+                    <li><input type="radio" name="job">b job</li> <!--다만 name="이름" 을 통해, 몇개의 radio 버튼 중에서, 하나를 선택하는 것인지를 연결해줘야 한다.-->
+                    <li><input type="radio" name="job">c job</li>
+                </ul>
+        </fieldset>
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+        </form>
+    </body>
+</html>

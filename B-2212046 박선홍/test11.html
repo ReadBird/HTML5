@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> <!--HTML 태그는 기본적으로 시작과 끝으로 쌍으로 이루어진다.-->
+    <head>
+        <meta charset="UTF-8"> <!--한글을 깨지지 않게 해주는 태그-->
+        <style>
+            #a {
+                text-decoration: underline; /*글씨 아래에 줄을 그어라*/
+                text-transform: capitalize; /*첫 글자만 대문자로 봐꿔라*/
+            }
+            #b {
+                text-decoration: overline; /*글씨 위에 줄을 그어라*/
+                text-transform: uppercase; /*전부 대문자로 봐꿔라*/
+            }
+            #c {
+                text-decoration: line-through; /*글씨 중간에 줄을 그어라*/
+                text-transform: lowercase; /*전부 소문자로 봐꿔라*/
+            }
+            a {
+                text-decoration:  none;
+                color: green;
+            }
+        </style>
+    </head>
+    <body> <!--body 안에 입력하는 것이 실제 문서에 표시되는 내용-->
+        <p id="a">aaaaa</P>
+        <P id="b">bbbbb</P>
+        <P id="c">ccccc</P>
+        <a href="#">click</a>
+    </body>
+</html>
